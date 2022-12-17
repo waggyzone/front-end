@@ -6,28 +6,28 @@ import fish from "../assets/fish.jpg";
 import pig from "../assets/pig.jpg";
 
 export const MenuList = [
-{
-  name: "Dog",
-image: dog,
-},
-{
-name: "Cat",
-image: cat,
-},
-{
-name: "Birds",
-image: birds,
-},
-{
-name: "Rabbit",
-image: rabbit,
-},
-{
-name: "Fish",
-image: fish,
-},
-{
-name: "Guinea Pigs",
-image:pig,
-},
+  {
+    name: "Dog",
+    image: dog,
+  },
+  {
+    name: "Cat",
+    image: cat,
+  },
+  {
+    name: "Birds",
+    image: birds,
+  },
+  {
+    name: "Rabbit",
+    image: rabbit,
+  },
+  {
+    name: "Fish",
+    image: fish,
+  },
+  {
+    name: "Guinea Pigs",
+    image: pig,
+  },
 ];

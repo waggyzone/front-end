@@ -16,17 +16,17 @@
 
 .aboutBottom {
   font-style: italic;
-max-width: 900px;
-font-size: 20px;
-line-height: 35px;
-text-align: center;
-color: #333333;
-padding: 60px 12px;
-font-family: headinglight;
-margin: 0 auto;
-max-width: 1200px;
-padding-left: 12px;
-padding-right: 12px;
+  max-width: 900px;
+  font-size: 20px;
+  line-height: 35px;
+  text-align: center;
+  color: #333333;
+  padding: 60px 12px;
+  font-family: headinglight;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .aboutBottom p {

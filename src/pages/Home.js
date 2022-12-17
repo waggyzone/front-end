@@ -5,7 +5,7 @@ import "../styles/Home.css";
 
 function Home() {
   return (
-    <div className="home" style={{backgroundImage: `url(${BannerImage})` }}>
+    <div className="home" style={{ backgroundImage: `url(${BannerImage})` }}>
       <div className="headerContainer">
         <h1> waggy </h1>
         <p> Where being the pet is just Best!</p>

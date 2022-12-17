@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import Logo from "../assets/logo.jpeg";
 import { Link } from "react-router-dom";
@@ -21,8 +20,7 @@ function Navbar() {
           <Link to="/food"> Food </Link>
           <Link to="/about"> About </Link>
           <Link to="/contact"> Contact </Link>
-          
-         </div>
+        </div>
       </div>
       <div className="rightSide">
         <Link to="/"> Home </Link>
@@ -30,9 +28,7 @@ function Navbar() {
         <Link to="/food"> Food </Link>
         <Link to="/about"> About </Link>
         <Link to="/contact"> Contact </Link>
-       
 
-        
         <button onClick={toggleNavbar}>
           <ReorderIcon />
         </button>

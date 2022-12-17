@@ -9,13 +9,7 @@ function Menu() {
       <h1 className="menuTitle">pets</h1>
       <div className="menuList">
         {MenuList.map((menuItem, key) => {
-          return (
-            <MenuItem
-              key={key}
-              image={menuItem.image}
-              name={menuItem.name}
-            />
-          );
+          return <MenuItem key={key} image={menuItem.image} name={menuItem.name} />;
         })}
       </div>
     </div>
