@@ -1,8 +1,8 @@
-import Axios from 'axios';
+import Axios from "axios";
 
 const apiClient = Axios.create({
-baseURL: process.env.REACT_APP_API_ENTRYPOINT,
-})
+  baseURL: process.env.REACT_APP_API_ENTRYPOINT,
+});
 
 apiClient.interceptors.request.use((request) => ({
   ...request,
@@ -15,4 +15,4 @@ apiClient.interceptors.response.use(
   }
 );
 
-export {apiClient};
+export { apiClient };
