@@ -1,6 +1,6 @@
 
 import React, { useRef, useState } from 'react'
-import { validateLoginSChema } from '../../common';
+import { validateProductSchema } from '../../common';
 import TextBox from '../../components/TextBox';
 import { Form, Formik } from "formik";
 
@@ -10,15 +10,12 @@ import { Box, Typography } from '@material-ui/core';
 
 
 const initialValue ={
-    username: "",
-    password:""
+    name: "",
+    brandname: "",
+    price: ""
 }
 
-// login page functionalties
-// product,accessories
-// Proctred Route -> 
-
-const Login = () => {
+const Food = () => {
  const formikRef = useRef();
 const [status,setStatus] = useState("")
 
@@ -31,22 +28,19 @@ const [status,setStatus] = useState("")
   
 
   return (
-    <Box className='login'  
+    <Box className='food'  
     >
     <Formik
         innerRef={formikRef}
         initialValues={initialValue}
         onSubmit={onSubmit}
-        validationSchema={validateLoginSChema}>
-        <Form className="login__form">
-          <TextBox placeHolder="Username" name="username" onChange={(event) => handleChange(event)} />
-          <TextBox
-            placeHolder="Password"
-            type="password"
-            name="password"
-            onChange={(event) => handleChange(event)}
-          />
-          <button type="submit" label="Login" />
+        validationSchema={validateProductSchema}>
+        <Form className="food__form">
+          <TextBox placeHolder="Name" name="name" onChange={(event) => handleChange(event)} />
+          <TextBox placeHolder="Brandname" name="brandname" onChange={(event) => handleChange(event)} />
+          <TextBox placeHolder="Price" name="price" onChange={(event) => handleChange(event)} />
+         
+          <button type="submit" label="Add" />
         </Form>
       </Formik>
       <Typography></Typography>
@@ -54,4 +48,4 @@ const [status,setStatus] = useState("")
   )
 }
 
-export default Login
+export default Food

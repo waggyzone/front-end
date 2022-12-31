@@ -8,10 +8,13 @@ import Food from "./pages/Food";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Store from "./pages/Store";
+import Login from "./pages/Login/Login";
+import Product from "./pages/Product/Product";
+import Accessories from "./pages/Accessories/Accessories";
+
+
 
 function App() {
-
-
   return (
     <div className="App">
       <Router>
@@ -19,6 +22,9 @@ function App() {
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/store" exact element={<Store />} />
+          <Route path="/login" exact element={<Login/>}/>
+          <Route path="/product" exact element={<Product/>}/>
+          <Route path="/Accessories" exact element={<Accessories/>}/>
           <Route path="/about" exact element={<About />} />
           <Route path="/contact" exact element={<Contact />} />
           <Route path="/food" exact element={<Food />} />
