@@ -22,6 +22,9 @@ function Navbar() {
           <Link className="navbar__link" to="/about"> About </Link>
           <Link className="navbar__link" to="/contact"> Contact </Link>
           <Link className="navbar__link" to="/login"> Login </Link>
+          <Link className="navbar__link" to="/product"> Product </Link>
+          <Link className="navbar__link" to="/accessories"> Accessories </Link>
+
         </div>
       </div>
       <div className="rightSide">
@@ -31,6 +34,8 @@ function Navbar() {
         <Link className="navbar__link" to="/about"> About </Link>
         <Link className="navbar__link" to="/contact"> Contact </Link>
         <Link className="navbar__link" to="/login"> Login </Link>
+        <Link className="navbar__link" to="/product"> Product </Link>
+        <Link className="navbar__link" to="/accessories"> Accessories </Link>
 
         <button onClick={toggleNavbar}>
           <ReorderIcon />

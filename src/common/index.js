@@ -6,5 +6,18 @@ export const validateLoginSChema = Yup.object().shape({
 })
 
 
+export const validateProductSchema = Yup.object().shape({
+    name: Yup.string().required("Required"),
+    brandname: Yup.string().required("Required"),
+    price: Yup.number().required("Required")
+
+})
+
+export const validateAccessoriesSchema = Yup.object().shape({
+    name: Yup.string().required("Required"),
+    size: Yup.string(),
+    color: Yup.string(),
+    price: Yup.number().required("Required")
+})
 
 
